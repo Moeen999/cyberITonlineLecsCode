@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* border-style: dotted;
+    border-color: navy; */
+    /* border: 2px solid salmon;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    /* border: 2px solid slateblue;
+    border-radius: 20%; */
+}

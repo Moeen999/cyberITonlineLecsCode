@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* .container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 5px solid purple;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    from{
+        background-color: red;
+        transform: scale(0.7);
+        border-radius: 12px;
+    }
+    to{
+        background-color: purple;
+        transform: scale(1.2);
+        border-radius: 50%;
+    }
+} */
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 16rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .c-1 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.main-container .c-1:hover{
+    border-radius: 50%;
+}
+
+.main-container .c-2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  background-color: green;
+  font-weight: 700;
+  transition: all 2s ease-in-out;
+}
+
+.main-container .c-2:hover{
+    border-radius: 50%;
+}
