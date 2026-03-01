@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Navbar using HTML & CSS</title>
+  </head>
+
+  <body>
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1>Logo</h1>
+      </div>
+
+      <div class="links-container">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="button-container">
+        <button>SignIn</button>
+        <button>SignUp</button>
+        <i class="fa-solid fa-bars bars"></i>
+      </div>
+    </div>
+
+    <div class="topBar-container">
+      <i class="fa-solid fa-x cross"></i>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact Us</a>
+      <button>SignIn</button>
+      <button>SignUp</button>
+    </div>
+
+    <script>
+      const bars = document.querySelector(".bars");
+      const cross = document.querySelector(".cross");
+      const topBar = document.querySelector(".topBar-container");
+
+      bars.addEventListener("click", () => {
+        topBar.classList.add("active");
+      });
+
+      cross.addEventListener("click", () => {
+        topBar.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
