@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Intro</title>
+  </head>
+  <style>
+    #heading {
+    }
+  </style>
+  <body>
+    <h1 id="heading">Hi i am a heading</h1>
+    <script>
+      const heading = document.getElementById("heading");
+      heading.addEventListener("click", () => {
+        console.log("Hello");
+      });
+    </script>
+  </body>
+</html>
