@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <h2>Object Methods</h2>
+    <p>A method is a function definition stored as a property value.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const student = {
+        firstName: "Waheeba",
+        lastName: "BiBI",
+        age: 50,
+        course: "Web Technologies",
+        credit_hours: 4,
+        fullName: function () {
+          return this.firstName + "" + this.lastName;
+        },
+        // ! agar hamain object k andar nested function k andar ksi bhi exsitibg object ki value ko return ya access krna ho to tab ham us function main this keyword k zaryay access kr sakty hain
+      };
+
+
+      console.log(student)
+    //    student["age"] = 15;
+    //    delete student.course;
+    //    console.log(student.course) 
+       
+    
+    //   console.log(
+    //     student.fullName() + " " + "is studying " + " " + student.course,
+    //   );
+
+      //   document.getElementById("demo").innerHTML = person.fullName();
+
+    //   let para = "i have  a dream that one day this nation will rise up.";
+    //   console.log(para.toUpperCase());
+    </script>
+  </body>
+</html> 

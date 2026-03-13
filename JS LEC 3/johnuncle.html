@@ -1,0 +1,61 @@
+<!-- <!doctype html>
+<html>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <h2>Display Properties</h2>
+
+    <h1 id="demo"></h1>
+
+    <script>
+      // Create an Object
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+      };
+
+      // Build a Text
+      let text = "";
+      for (let x in person) {
+        text += person[x] + " ";
+      }
+
+      // Display the Text
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The Object.values() Method</h2>
+<p>Object.values() returns an array of values from an object:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Create an Array from the Properties
+const myArray = Object.values(person);
+
+// Stringify the Array
+let text = myArray.toString(); 
+console.log(text)
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

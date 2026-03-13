@@ -1,23 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+
+  <body>
+    <h1>User Input</h1>
+    <input type="text" />
 
     <script>
+      const userInput = document.querySelector("input");
+      userInput.addEventListener("keyup",(e)=>{
+        console.log(e.target.value);
+      })
+    //   let a;
+    //   let b;
+    //   // console.log(b)
+    //   // console.log(c);
 
-        let a;
-        let b;
-        // console.log(b)
-        // console.log(c);
+    //   let kaki = null;
+    //   console.log(kaki);
+    //   let kaka = null;
 
-        let kaki = null;
-        console.log(kaki)
-        let kaka = null;
+      // const userInput = prompt("Enter a value");
+      // console.log(userInput);
     </script>
-</body>
+  </body>
 </html>
