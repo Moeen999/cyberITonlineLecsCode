@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS ARRAY ITERATIONS</title>
+  </head>
+  <body>
+    <h1></h1>
+    <script>
+      const numbers = [45, 4, 9, 16, 25];
+      //   numbers.forEach((number) => {
+      // document.querySelector("h1").innerHTML +=", "+ number
+      //   });
+
+      // numbers.map((number)=>{
+      //     document.querySelector("h1").innerHTML +=", "+ number;
+      // })
+
+      const filteredVal = numbers.filter((value) => {
+        return value > 10;
+      });
+      console.log(filteredVal);
+    </script>
+  </body>
+</html>
