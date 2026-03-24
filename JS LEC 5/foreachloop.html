@@ -17,10 +17,28 @@
       //     document.querySelector("h1").innerHTML +=", "+ number;
       // })
 
-      const filteredVal = numbers.filter((value) => {
-        return value > 10;
+      // const filteredVal = numbers.filter((value) => {
+      //   return value > 10;
+      // });
+      // console.log(filteredVal);
+
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+      // const result = { even: [], odd: [] };
+      // for (let val of arr) {
+      //   if (val % 2 === 0) {
+      //     result.even.push(val);
+      //   } else {
+      //     result.odd.push(val);
+      //   }
+      // }
+      // console.log(result);
+
+      const res = arr.filter((val) => {
+        if (val % 2 !== 0) {
+          return val;
+        }
       });
-      console.log(filteredVal);
+      console.log(res)
     </script>
   </body>
 </html>
