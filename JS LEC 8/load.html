@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Load Events</title>
+</head>
+<body>
+
+    <h1>I will be loaded first</h1>
+    <h2>I will be loaded on second</h2>
+    <h3>I will loaded on third</h3>
+
+    <h1 id="demo"></h1>
+    <script>
+
+        document.addEventListener("DOMContentLoaded",()=>{  
+              document.getElementById("demo").innerHTML = "HTML is loaded!";
+
+        })
+    </script>
+</body>
+</html>

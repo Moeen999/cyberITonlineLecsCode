@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS Key Events</h1>
+
+    <input id="k" type="number" placeholder="Press a key" />
+    <p id="demo"></p>
+    <script>
+      const k = document.getElementById("k");
+      const demo = document.getElementById("demo");
+      k.addEventListener("keyup", (event) => {
+        document.getElementById("demo").innerHTML = "You pressed: " + event.key;
+      });
+    </script>
+  </body>
+</html>
