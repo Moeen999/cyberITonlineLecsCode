@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter in JS</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .btn-conatiner {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-conatiner button {
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <h1>Counter using JavaScript</h1>
+    <h3>The current value is: <span id="demo"></span></h3>
+
+    <div class="btn-conatiner">
+      <button onclick="increaseCount()">+</button>
+      <button onclick="decreaseCount()">-</button>
+      <button onclick="resetCount()">Reset</button>
+      <button onclick="saveCount()">Save</button>
+      <button onclick="loadCount()">Load</button>
+    </div>
+    <script>
+      let count = 0;
+
+      // function loadValuefromLocalStorage (){
+      //     localStorage.getItem("count");
+      // }
+      function updateCount() {
+        document.getElementById("demo").innerHTML = count;
+      }
+      function increaseCount() {
+        count++;
+        updateCount();
+      }
+
+      function decreaseCount() {
+        if (count > 0) {
+          count--;
+          updateCount();
+        }
+      }
+
+      function resetCount() {
+        count = 0;
+        updateCount();
+      }
+
+      function saveCount() {
+        localStorage.setItem("count", count);
+      }
+
+      function loadCount() {
+        const updatedCount = localStorage.getItem("count");
+        if (updatedCount !== null) {
+          count = Number(updatedCount);
+        }
+        updateCount();
+      }
+    </script>
+  </body>
+</html>
